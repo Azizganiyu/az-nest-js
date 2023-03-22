@@ -21,7 +21,7 @@ export class WalletController {
     return {
       status: true,
       message: 'user Balances retrieved successfully',
-      data: wallet.balance,
+      data: wallet,
     };
   }
 }
