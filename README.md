@@ -22,31 +22,10 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## Test
+## Database
 
-```bash
-# unit tests
-$ npm run test
+For a transactional system, a relational database is best used because it ensures your data is stored only once, so you shouldn't get data anomalies. The ability to define schema and constraints introduces certain limitations that ensure data integrity. Also, authentication and access privilege are handled better in a relational database.
 
-# e2e tests
-$ npm run test:e2e
+The two relational database that comes to mind are MySQL and PostgreSQL.
 
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
-=======
-# az-nest-js
+I decided to go with MySQL because of its popularity and ease of use, and because MySQL is suitable with the task at hand without introducing any complexity. 
